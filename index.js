@@ -95,7 +95,7 @@ function engineerInquiry() {
         {
             type: 'input',
             message: "Please enter the employee's GitHub username",
-            name: 'officeNumber',
+            name: 'github',
         },
     ])
     .then((response) => {
@@ -103,7 +103,7 @@ function engineerInquiry() {
             response.name,
             response.id,
             response.email,
-            response.officeNumber,
+            response.github,
         );
         team.push(engineer)
         pickEmployee()
@@ -129,8 +129,8 @@ function internInquiry() {
         },
         {
             type: 'input',
-            message: "Please enter the employee's GitHub username",
-            name: 'officeNumber',
+            message: "Please enter the employee's school",
+            name: 'school',
         },
     ])
     .then((response) => {
@@ -138,7 +138,7 @@ function internInquiry() {
             response.name,
             response.id,
             response.email,
-            response.officeNumber,
+            response.school,
         );
         team.push(intern)
         pickEmployee()
@@ -146,25 +146,8 @@ function internInquiry() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 async function startProgram() {
 
     let htmlDoc = render(team)
     await fs.writeFile(outputPath, htmlDoc)
-
 }
-

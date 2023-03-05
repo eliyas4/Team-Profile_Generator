@@ -9,7 +9,9 @@
 node index.js  
 
 ## Usage
+Please view this walkthrough video!
 
+https://drive.google.com/file/d/19Fx5GDCsWOlPCPGwi9pxRz9ijs0wAwQj/view?usp=sharing
 ## Credits 
 N/A
 
